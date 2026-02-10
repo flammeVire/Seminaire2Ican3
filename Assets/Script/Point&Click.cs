@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,13 +9,13 @@ public class PointAndClick : MonoBehaviour
     [SerializeField] LayerMask TileLayer;
     [SerializeField] LayerMask PlayerLayer;
 
+
+    [SerializeField] GameObject[] CenterPoint;
+    [SerializeField] CenterPointAvailable[] CenterPointAvailables;
     /*
      a faire:
-            deplacement seulement sur des cases "vide"
-            ajouter juice rota (voir la rota)
-            ajout event quand case posé
-            impossible de posé une case hors de la map
             
+            ajouter juice rota (voir la rota)
             clic droit pour faire déplacer le joueur
             ajout fin
 
@@ -39,11 +40,11 @@ public class PointAndClick : MonoBehaviour
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
         {
-            RotateTile(90);
+            RotateTile(CurrentTileSelected.GetComponent<Tile>().IncrementRotation);
         }
         else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
         {
-            RotateTile(-90);
+            RotateTile(-CurrentTileSelected.GetComponent<Tile>().IncrementRotation);
         }
 
     }
@@ -58,6 +59,7 @@ public class PointAndClick : MonoBehaviour
         {
             Debug.Log("hit something " + hit.transform.name);
             CurrentTileSelected = hit.transform.gameObject;
+            ReleaseCPA();
         }
         else
         {
@@ -65,8 +67,38 @@ public class PointAndClick : MonoBehaviour
         }
     }
 
+    void ReleaseCPA()
+    {
+        foreach (var CPA in CenterPointAvailables)
+        {
+            if (CPA.CenterPoint == CurrentTileSelected.transform.position)
+            {
+                    CPA.Available = true;
+
+                break;
+            }
+        }
+    }
+
     void TryToReleaseTile()
     {
+        Vector3 point = GetClosestTile(Utility.GetMousePos());
+
+        foreach(var CPA in CenterPointAvailables)
+        {
+            if(CPA.CenterPoint == point)
+            {
+                if (CPA.Available)
+                {
+                    CurrentTileSelected.transform.position = point;
+                    CPA.Available = false;
+                }
+                break;
+            }
+        }
+
+
+        CurrentTileSelected.GetComponent<Tile>().CheckPosition();
         CurrentTileSelected = null;
     }
 
@@ -77,11 +109,28 @@ public class PointAndClick : MonoBehaviour
             Vector3 rota = CurrentTileSelected.transform.rotation.eulerAngles;
             rota.z += Angle;
             CurrentTileSelected.transform.localEulerAngles = rota;
-
         }
     }
 
+    public Vector3 GetClosestTile(Vector3 point)
+    {
+        float minDistance = Mathf.Infinity;
+        Vector3 closestTilePosition = Vector3.zero;
+        foreach(GameObject GO in CenterPoint)
+        {
+            float distance = Vector3.Distance(point, GO.transform.position);
+            if(distance < minDistance)
+            {
+                minDistance = distance;
+                closestTilePosition = GO.transform.position;
+            }
+        }
+
+        return closestTilePosition;
+    }
 }
+
+
 
 public class Utility : MonoBehaviour
 {
@@ -92,4 +141,15 @@ public class Utility : MonoBehaviour
         Vector3 pos = Camera.main.ScreenToWorldPoint(mpos);
         return pos;
     }
+
+}
+
+
+[Serializable]
+public class CenterPointAvailable
+{
+    [SerializeField] Transform PointEditor;
+
+    public Vector3 CenterPoint => PointEditor.position;
+    public bool Available;
 }
