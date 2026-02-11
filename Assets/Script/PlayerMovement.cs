@@ -1,11 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] Transform[] points;
+    
     [SerializeField] float moveSpeed;
+    int DataIndex;
+    [SerializeField]PlayerData[] playerDatas;
 
     public void StartMovement(int pointsIndexToStop)
     {
@@ -21,14 +25,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            p = points.Length - 1;
+            p = playerDatas[DataIndex].points.Length - 1;
         }
 
 
-        for (int i = 0; i <= p && i < points.Length; i++)
+        for (int i = 0; i <= p && i < playerDatas[DataIndex].points.Length; i++)
         {
             Vector3 start = transform.position;
-            Vector3 end = points[i].position;
+            Vector3 end = playerDatas[DataIndex].points[i].position;
 
             float duration = Vector3.Distance(start, end) / moveSpeed;
             float elapsed = 0f;
@@ -45,8 +49,21 @@ public class PlayerMovement : MonoBehaviour
             }
 
             transform.position = end;
+            if(i == playerDatas[DataIndex].points.Length - 1)
+            {
+                playerDatas[DataIndex].EndOfMovement.Invoke();
+                DataIndex++;
+            }
         }
 
         //movementCoroutine = null;
     }
+
+    [Serializable]
+    class PlayerData
+    {
+        public Transform[] points;
+        public UnityEvent EndOfMovement;
+    } 
 }
+

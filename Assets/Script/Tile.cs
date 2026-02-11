@@ -8,7 +8,7 @@ public class Tile : MonoBehaviour
 {
     [SerializeField] Transform CenterTilesTarget; 
 
-    public Vector3 WantedRotation => CenterTilesTarget.rotation.eulerAngles;
+    public Quaternion WantedRotation => CenterTilesTarget.rotation;
     public bool IsCorrectRotation = false;
 
     public Vector3 WantedPosition => CenterTilesTarget.position;
@@ -27,12 +27,19 @@ public class Tile : MonoBehaviour
     public bool CheckConditions()
     {
         bool good = true;
-        foreach (var c in conditions)
+        if (conditions.Length > 0)
         {
-            if (!c.ConditionIsGood)
+            Debug.Log("if");
+            foreach (var c in conditions)
             {
-                good = false;
-                break;
+                Debug.Log(c.ConditionIsGood);
+                c.ConditionIsGood = !c.PreviousTile.IsEventCallable;
+                Debug.Log(c.ConditionIsGood);
+                if (!c.ConditionIsGood)
+                {
+                    good = false;
+                    break;
+                }
             }
         }
         return good;
@@ -52,10 +59,9 @@ public class Tile : MonoBehaviour
                 Debug.Log(transform.position + " != " + WantedPosition);
                 IsCorrectPosition = false;
             }
-
-            if (transform.rotation.eulerAngles == WantedRotation)
+                Debug.Log(transform.rotation);
+            if (Mathf.Abs(Quaternion.Dot(transform.rotation, WantedRotation)) > 0.9999f)
             {
-                Debug.Log(transform.rotation.eulerAngles + " != " + WantedRotation);
                 IsCorrectRotation = true;
             }
             else
@@ -66,6 +72,7 @@ public class Tile : MonoBehaviour
             if (IsCorrectPosition && IsCorrectRotation)
             {
                 IsEventCallable = CheckConditions();
+                Debug.Log(IsEventCallable);
                 if (IsEventCallable)
                 {
                     Debug.Log("Invoke");
@@ -92,6 +99,6 @@ public class Tile : MonoBehaviour
     {
 
         public Tile PreviousTile;
-        public bool ConditionIsGood => PreviousTile.IsEventCallable;
+        public bool ConditionIsGood;
     }
 
