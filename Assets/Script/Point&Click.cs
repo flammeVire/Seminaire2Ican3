@@ -28,7 +28,7 @@ public class PointAndClick : MonoBehaviour
     void Update()
     {
         ManageInput();
-        ShowSelectable();
+       // ShowSelectable();
     }
     
     void ManageInput()
@@ -44,36 +44,25 @@ public class PointAndClick : MonoBehaviour
                 TryToReleaseTile();
             }
         }
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
+        if (CurrentTileSelected != null)
         {
-            RotateTile(CurrentTileSelected.GetComponent<Tile>().IncrementRotation);
-        }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
-        {
-            RotateTile(-CurrentTileSelected.GetComponent<Tile>().IncrementRotation);
-        }
-
-    }
-
-    
-
-    void ShowSelectable()
-    {
-        if(CurrentTileSelected == null)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100f))
+            if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
             {
-                Debug.Log("Change Mat");
-                hit.collider.GetComponent<MeshRenderer>().materials[0] = mats[1];
-                
+
+                RotateTile(CurrentTileSelected.GetComponent<Tile>().IncrementRotation);
+            }
+            else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
+            {
+                RotateTile(-CurrentTileSelected.GetComponent<Tile>().IncrementRotation);
             }
         }
+
     }
 
-    
+
+
+
+
     void TryToGetTile()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -156,6 +145,27 @@ public class PointAndClick : MonoBehaviour
 
     #region Feedback
 
+    void ShowSelectable()
+    {
+        if (CurrentTileSelected == null)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100f))
+            {
+                Transform[] children = hit.collider.GetComponentsInChildren<Transform>();
+                foreach (Transform child in children)
+                {
+                    if (child.gameObject.layer == LayerMask.NameToLayer("mat"))
+                    {
+                        child.GetComponent<MeshRenderer>().material = mats[0];
+                        break;
+                    }
+                }
+            }
+        }
+    }
     public IEnumerator ChangeScale(float addingScale)
     {
         GameObject currentTile = CurrentTileSelected;

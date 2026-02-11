@@ -178,9 +178,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8312554}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.057474338, y: -0.01580696, z: 0.015735019}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118.39084, y: -3.9804525, z: 1.4402094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 376241522}
@@ -346,14 +346,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &45699104
@@ -466,8 +466,8 @@ Transform:
   m_GameObject: {fileID: 111089932}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.9752214, y: -0.0048710923, z: 0}
-  m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50.03002, y: 50.03005, z: 50.029984}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1782728755}
@@ -636,6 +636,89 @@ Transform:
   - {fileID: 908650705}
   m_Father: {fileID: 817974431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &157022742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 111.739
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.573
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50aa8133c8cd487418cb765be7d1a3c3, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      propertyPath: m_Name
+      value: perso
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1363578174}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1363578178}
+  m_SourcePrefab: {fileID: 100100000, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
 --- !u!1 &196875334
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,9 +743,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196875334}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.07739999, y: -0.015800007, z: 0.13630004}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 121.69853, y: 2.9886842, z: 1.4395733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1782728755}
@@ -861,14 +944,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &221723135
@@ -1335,14 +1418,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326544753}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.019987999, y: 0.019988013, z: 0.019987999}
+  m_LocalScale: {x: 3.4034798, y: 2.0710013, z: 3.5602574}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2083822229}
+  m_Children: []
   m_Father: {fileID: 713358379}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &326544755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,14 +1437,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &326544756
@@ -1645,9 +1727,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376241521}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.040043257, y: 0, z: -0.03922351}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 957172463}
@@ -1665,14 +1747,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &376241524
@@ -1754,7 +1836,7 @@ Transform:
   m_GameObject: {fileID: 381652926}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.004748, y: -0.0011329756, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2113,14 +2195,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &398644250
@@ -2190,14 +2272,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &411217970
@@ -2267,14 +2349,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &423624949
@@ -2344,14 +2426,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &432974854
@@ -2547,9 +2629,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456435582}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.040043257, y: 0, z: -0.00009738276}
-  m_LocalScale: {x: 0.019987999, y: 0.019988012, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.5602603, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 940432748}
@@ -2567,14 +2649,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &456435585
@@ -2670,9 +2752,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477507544}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 108.85, y: -4.89, z: -1.440209}
-  m_LocalScale: {x: 166.00174, y: 91.112366, z: 57.803967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 713358379}
@@ -2683,14 +2765,11 @@ Transform:
   - {fileID: 1300844609}
   - {fileID: 1895246100}
   - {fileID: 2087882370}
-  - {fileID: 1193526541}
-  - {fileID: 1688957149}
   - {fileID: 1189225873}
   - {fileID: 1408819209}
   - {fileID: 8312555}
-  - {fileID: 1721762737}
   - {fileID: 2025336398}
-  - {fileID: 1143098652}
+  - {fileID: 1229114940}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &477507546
@@ -2750,7 +2829,7 @@ MonoBehaviour:
     Available: 0
   - PointEditor: {fileID: 2025336398}
     Available: 0
-  AddScaleSelection: 0
+  AddScaleSelection: 0.5
   mats: []
 --- !u!1 &516343193
 GameObject:
@@ -2811,7 +2890,7 @@ Transform:
   m_GameObject: {fileID: 517662690}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -1.9580498, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50.03002, y: 50.030018, z: 50.02998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2913,14 +2992,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &518658516
@@ -3105,14 +3184,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &560534837
@@ -3162,7 +3241,7 @@ Transform:
   m_GameObject: {fileID: 562459563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130.6697, y: -2.7664304, z: -2.2371225}
+  m_LocalPosition: {x: 130.6697, y: -2.7664304, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3354,9 +3433,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580962304}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.05946872, y: 0, z: -0.03922351}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1807578804}
@@ -3374,14 +3453,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &580962307
@@ -3577,14 +3656,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &638174825
@@ -4031,7 +4110,7 @@ GameObject:
   m_Layer: 0
   m_Name: Top_1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4043,12 +4122,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713358378}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.016399993, y: -0.015799997, z: 0.13660005}
-  m_LocalScale: {x: 1.0257493, y: 1.1371908, z: 3.0814445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 111.572426, y: 3.0060267, z: 1.4395723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 326544754}
+  - {fileID: 2083822229}
   m_Father: {fileID: 477507545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733992380
@@ -4281,11 +4361,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760337410}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.004748, y: -1.9531791, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1688957149}
   m_Father: {fileID: 782456828}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &760337412
@@ -4464,7 +4545,7 @@ GameObject:
   - component: {fileID: 768075575}
   - component: {fileID: 768075577}
   - component: {fileID: 768075576}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4479,9 +4560,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768075574}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.019795934}
-  m_LocalScale: {x: 0.019987999, y: 0.019988012, z: 0.019987999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.5602596, z: 2.0709994}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1267397992}
@@ -4499,14 +4580,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &768075577
@@ -4526,7 +4607,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4642,9 +4723,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782456827}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.020082902, y: 0, z: -0.03904016}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 760337411}
@@ -4662,14 +4743,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 1300844609}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1363578178}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: StartMovement
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &782456830
@@ -4918,7 +5011,7 @@ Transform:
   m_GameObject: {fileID: 817974430}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 122.39, y: -4.89, z: -1.440209}
+  m_LocalPosition: {x: 122.39, y: -4.89, z: 0}
   m_LocalScale: {x: 166.00174, y: 91.112366, z: 57.803967}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5307,14 +5400,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &866445619
@@ -5384,14 +5477,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &908650707
@@ -5586,8 +5679,8 @@ Transform:
   m_GameObject: {fileID: 940432747}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.003365, y: -0.0048715756, z: 0}
-  m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.02998}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50.03002, y: 50.03004, z: 50.029972}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 456435583}
@@ -5668,8 +5761,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957172462}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.003365, y: -1.962352, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5736,6 +5829,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5811,12 +5905,51 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115.5, y: -0.4, z: -24.27}
+  m_LocalPosition: {x: 115.5, y: -0.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcd4692e8d9af64580c4b74d9f66e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 817974432}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 562459565}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &965061522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5894,14 +6027,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &984007997
@@ -6164,14 +6297,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1037049079
@@ -6241,14 +6374,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1058666650
@@ -6516,14 +6649,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1107059717
@@ -6642,39 +6775,39 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 477507545}
+    m_TransformParent: {fileID: 1267397992}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.9748971
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.8793595
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.72419
+      value: 0.23501642
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016427983
+      value: 0.000027286855
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0056
+      value: -0.018818298
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0565
+      value: 0.006198409
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.000000119209275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6742,9 +6875,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189225872}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.016399993, y: -0.015800001, z: 0.016000008}
-  m_LocalScale: {x: 1.0257493, y: 1.1371908, z: 3.0814445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 111.572426, y: -3.9651353, z: 1.4395752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1206869840}
@@ -6756,39 +6889,39 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 477507545}
+    m_TransformParent: {fileID: 2080299552}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.9748971
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.87935925
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.72419
+      value: 0.23501636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07689
+      value: -0.0004971674
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0056
+      value: -0.018818293
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0562
+      value: 0.006230856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.000000119209275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6861,9 +6994,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206869839}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.039137516}
-  m_LocalScale: {x: 0.019987999, y: 0.019988012, z: 0.019987999}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 517662691}
@@ -6881,14 +7014,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1206869842
@@ -7027,6 +7160,39 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 815303663}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1229114939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229114940}
+  m_Layer: 0
+  m_Name: Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229114940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229114939}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 111.739, y: -0.086, z: -0.573}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1810469515}
+  - {fileID: 1841948677}
+  m_Father: {fileID: 477507545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1237476941
 GameObject:
@@ -7331,10 +7497,11 @@ Transform:
   m_GameObject: {fileID: 1267397991}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.99039, z: 0}
-  m_LocalScale: {x: 50.03002, y: 50.030018, z: 50.02998}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50.03002, y: 50.030045, z: 50.02998}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1143098652}
   m_Father: {fileID: 768075575}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &1267397993
@@ -7411,9 +7578,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300844608}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.037000015, y: -0.015800001, z: 0.07550001}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.992065, y: -0.5257983, z: 1.4395742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477507545}
@@ -7429,7 +7596,7 @@ GameObject:
   - component: {fileID: 1309043003}
   - component: {fileID: 1309043005}
   - component: {fileID: 1309043004}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7444,9 +7611,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309043002}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.040043257, y: 0, z: -0.019860838}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1666353196}
@@ -7464,14 +7631,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1309043005
@@ -7491,7 +7658,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7519,9 +7686,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332287357}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.057474338, y: -0.015800007, z: 0.13630004}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118.39084, y: 2.9886842, z: 1.4395733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 456435583}
@@ -7656,14 +7823,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1349912490
@@ -7687,6 +7854,43 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1363578173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ed769b6ace16df4085e771b2a65162e, type: 3}
+  m_PrefabInstance: {fileID: 157022742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1363578174
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363578173}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a291dc7bd7b9e614d8d0a588c62ec75c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a291dc7bd7b9e614d8d0a588c62ec75c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1363578178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363578173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e709f3054058564e9dbaf022cb46b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 1810469515}
+  - {fileID: 1841948677}
+  moveSpeed: 2
 --- !u!1 &1370594145
 GameObject:
   m_ObjectHideFlags: 0
@@ -7884,9 +8088,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408819208}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.037000015, y: -0.015800001, z: 0.016300008}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.992065, y: -3.9477942, z: 1.4395752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 782456828}
@@ -8226,7 +8430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1483483056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8436,14 +8640,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1519233782
@@ -8759,11 +8963,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666353195}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.003365, y: -0.99363744, z: 0}
-  m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50.03002, y: 50.03004, z: 50.029984}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1721762737}
   m_Father: {fileID: 1309043003}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &1666353197
@@ -8822,39 +9027,39 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 477507545}
+    m_TransformParent: {fileID: 760337411}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.9748971
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.87935925
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.72419
+      value: 0.23501636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03692
+      value: 0.000027286855
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0056
+      value: -0.018818298
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.006
+      value: 0.006198409
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.000000119209275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8907,39 +9112,39 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 477507545}
+    m_TransformParent: {fileID: 1666353196}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.9748971
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.8793591
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.72419
+      value: 0.23501636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057
+      value: -0.00046244272
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0056
+      value: -0.01881829
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0562
+      value: 0.006230856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.000000119209275
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59367bdace574bb4e9c88ed8903a13d3, type: 3}
       propertyPath: m_LocalRotation.y
@@ -9010,9 +9215,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722171074}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.037000015, y: -0.015799997, z: 0.13690004}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.992065, y: 3.0233665, z: 1.4395723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1804434411}
@@ -9172,14 +9377,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1750415124
@@ -9258,9 +9463,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759038906}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.016399993, y: -0.015800001, z: 0.07560002}
-  m_LocalScale: {x: 1.0257493, y: 1.1371908, z: 3.0814445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 111.572426, y: -0.52001715, z: 1.4395742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 768075575}
@@ -9323,9 +9528,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782728754}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.05946872, y: 0, z: -0.00009737309}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 111089933}
@@ -9343,14 +9548,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1782728757
@@ -9516,9 +9721,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804434410}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.020082902, y: 0, z: 0.00009733924}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 381652927}
@@ -9536,14 +9741,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1804434413
@@ -9593,8 +9798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807578803}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.9752214, y: -1.962352, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -9650,6 +9855,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807578803}
   m_Mesh: {fileID: -153830957423991239, guid: cbcdd649d11a4214b8a93f94f98b3972, type: 3}
+--- !u!1 &1810469514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1810469515}
+  m_Layer: 0
+  m_Name: Point1
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1810469515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810469514}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229114940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1814881901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9727,14 +9963,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: 0, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1819580490
@@ -9788,6 +10024,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1498886998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1841948676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841948677}
+  m_Layer: 0
+  m_Name: Point1 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1841948677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841948676}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.98, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229114940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861733727
 GameObject:
@@ -9927,9 +10194,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895246099}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.057474338, y: -0.015800001, z: 0.075400025}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118.39084, y: -0.53157854, z: 1.4395742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1309043003}
@@ -10065,9 +10332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
@@ -10085,6 +10351,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1905057623
@@ -10270,14 +10537,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &1913173474
@@ -10708,9 +10975,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025336397}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.07739999, y: -0.01580696, z: 0.015735019}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 121.69853, y: -3.9804525, z: 1.4402094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 580962305}
@@ -10727,7 +10994,7 @@ GameObject:
   - component: {fileID: 2049897740}
   - component: {fileID: 2049897742}
   - component: {fileID: 2049897741}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10742,9 +11009,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049897739}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.05946872, y: 0, z: -0.019860838}
-  m_LocalScale: {x: 0.019987999, y: 0.01998801, z: 0.01998799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.4034798, y: 3.56026, z: 2.0710003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2080299552}
@@ -10762,14 +11029,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &2049897742
@@ -10789,7 +11056,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11258,14 +11525,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: -7, y: 180, z: 0}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -4, y: 4, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
     m_PersistentCalls:
       m_Calls: []
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &2078691942
@@ -11316,10 +11583,11 @@ Transform:
   m_GameObject: {fileID: 2080299551}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.9752214, y: -0.99363744, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50.03002, y: 50.030037, z: 50.029984}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1193526541}
   m_Father: {fileID: 2049897740}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &2080299553
@@ -11398,13 +11666,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083822228}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071069}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50.03002, y: 50.030018, z: 50.029972}
+  m_LocalScale: {x: 170.27617, y: 103.61219, z: 178.1197}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 326544754}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_Father: {fileID: 713358379}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!23 &2083822230
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11479,9 +11747,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087882369}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.000000119209275}
-  m_LocalPosition: {x: 0.07739999, y: -0.015800001, z: 0.075400025}
-  m_LocalScale: {x: 1.0257493, y: 1.1371913, z: 3.0814447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 121.69853, y: -0.53157854, z: 1.4395742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2049897740}
@@ -11533,9 +11801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WantedRotation: {x: 0, y: 0, z: 90}
+  CenterTilesTarget: {fileID: 0}
   IsCorrectRotation: 0
-  WantedPosition: {x: -7, y: 0, z: 0}
   IsCorrectPosition: 0
   IsEventCallable: 1
   OnCorrectTransform:
@@ -11577,6 +11844,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  conditions: []
   TileID: -1
   IncrementRotation: 90
 --- !u!65 &2090762565
@@ -11917,3 +12185,4 @@ SceneRoots:
   - {fileID: 477507545}
   - {fileID: 817974431}
   - {fileID: 562459564}
+  - {fileID: 157022742}
