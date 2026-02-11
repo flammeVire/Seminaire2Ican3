@@ -8,5 +8,10 @@ public class ObjectAnimation : MonoBehaviour
     {
         go.GetComponent<Animation>().Play();
         
-    } 
+    }
+
+    public void InvokeAnimationEvent(GameObject go)
+    {
+        go.GetComponent<EventAnimation>().CallEventAnim();
+    }
 }
