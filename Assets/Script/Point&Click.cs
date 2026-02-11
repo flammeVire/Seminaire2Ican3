@@ -12,6 +12,11 @@ public class PointAndClick : MonoBehaviour
 
     [SerializeField] GameObject[] CenterPoint;
     [SerializeField] CenterPointAvailable[] CenterPointAvailables;
+
+    [Header("FeedBack")]
+    [SerializeField] float AddScaleSelection;
+    GameObject CursoredTile;
+    [SerializeField] Material[] mats;
     /*
      a faire:
             
@@ -23,6 +28,7 @@ public class PointAndClick : MonoBehaviour
     void Update()
     {
         ManageInput();
+        ShowSelectable();
     }
     
     void ManageInput()
@@ -50,6 +56,24 @@ public class PointAndClick : MonoBehaviour
     }
 
     
+
+    void ShowSelectable()
+    {
+        if(CurrentTileSelected == null)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100f))
+            {
+                Debug.Log("Change Mat");
+                hit.collider.GetComponent<MeshRenderer>().materials[0] = mats[1];
+                
+            }
+        }
+    }
+
+    
     void TryToGetTile()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -59,6 +83,7 @@ public class PointAndClick : MonoBehaviour
         {
             Debug.Log("hit something " + hit.transform.name);
             CurrentTileSelected = hit.transform.gameObject;
+            StartCoroutine(ChangeScale(AddScaleSelection));
             ReleaseCPA();
         }
         else
@@ -97,7 +122,7 @@ public class PointAndClick : MonoBehaviour
             }
         }
 
-
+        StartCoroutine(ChangeScale(-AddScaleSelection));
         CurrentTileSelected.GetComponent<Tile>().CheckPosition();
         CurrentTileSelected = null;
     }
@@ -128,6 +153,40 @@ public class PointAndClick : MonoBehaviour
 
         return closestTilePosition;
     }
+
+    #region Feedback
+
+    public IEnumerator ChangeScale(float addingScale)
+    {
+        GameObject currentTile = CurrentTileSelected;
+        float targetScale = currentTile.transform.localScale.x + addingScale;
+        if(addingScale >= 0)
+        {
+
+        while (currentTile.transform.localScale.x <= targetScale)
+        {
+            yield return null;
+            if (currentTile != null)
+            {
+                currentTile.transform.localScale = new Vector3(currentTile.transform.localScale.x + addingScale/4, currentTile.transform.localScale.y + addingScale/4, currentTile.transform.localScale.z + addingScale/4);
+            }
+        } 
+        }
+        else if(addingScale < 0)
+        {
+            while (currentTile.transform.localScale.x >= targetScale)
+            {
+                yield return null;
+                if (currentTile != null)
+                {
+                    currentTile.transform.localScale = new Vector3(currentTile.transform.localScale.x + addingScale / 4, currentTile.transform.localScale.y + addingScale / 4, currentTile.transform.localScale.z + addingScale / 4);
+                }
+            }
+        }
+        currentTile.transform.localScale = new Vector3(currentTile.transform.localScale.x + addingScale, currentTile.transform.localScale.y + addingScale, currentTile.transform.localScale.z + addingScale );
+    }
+
+    #endregion
 }
 
 
