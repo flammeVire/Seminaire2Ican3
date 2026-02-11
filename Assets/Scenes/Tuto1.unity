@@ -2750,6 +2750,8 @@ MonoBehaviour:
     Available: 0
   - PointEditor: {fileID: 2025336398}
     Available: 0
+  AddScaleSelection: 0
+  mats: []
 --- !u!1 &516343193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 562459564}
+  - component: {fileID: 562459565}
   m_Layer: 0
   m_Name: Part3
   m_TagString: Untagged
@@ -3183,6 +3186,65 @@ Transform:
   - {fileID: 913824445}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562459565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562459563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9366d05c23e2d854db7fe01d8570aee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentTileSelected: {fileID: 0}
+  TileLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  CenterPoint:
+  - {fileID: 516343193}
+  - {fileID: 622651560}
+  - {fileID: 451416067}
+  - {fileID: 1694400}
+  - {fileID: 665028682}
+  - {fileID: 1934196806}
+  - {fileID: 1000614369}
+  - {fileID: 612393909}
+  - {fileID: 909918285}
+  - {fileID: 847203160}
+  - {fileID: 685178289}
+  - {fileID: 200485812}
+  CenterPointAvailables:
+  - PointEditor: {fileID: 516343194}
+    Available: 0
+  - PointEditor: {fileID: 622651561}
+    Available: 0
+  - PointEditor: {fileID: 451416068}
+    Available: 0
+  - PointEditor: {fileID: 1694401}
+    Available: 0
+  - PointEditor: {fileID: 665028683}
+    Available: 0
+  - PointEditor: {fileID: 1934196807}
+    Available: 1
+  - PointEditor: {fileID: 1000614370}
+    Available: 0
+  - PointEditor: {fileID: 612393910}
+    Available: 0
+  - PointEditor: {fileID: 909918286}
+    Available: 0
+  - PointEditor: {fileID: 847203161}
+    Available: 0
+  - PointEditor: {fileID: 685178290}
+    Available: 0
+  - PointEditor: {fileID: 200485813}
+    Available: 0
+  AddScaleSelection: 0
+  mats: []
 --- !u!1 &566360147
 GameObject:
   m_ObjectHideFlags: 0
@@ -4916,6 +4978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 817974431}
+  - component: {fileID: 817974432}
   m_Layer: 0
   m_Name: Part2
   m_TagString: Untagged
@@ -4937,24 +5000,83 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 367065850}
-  - {fileID: 2011649092}
+  - {fileID: 1451273504}
+  - {fileID: 139905669}
+  - {fileID: 746370605}
   - {fileID: 1910093433}
   - {fileID: 2057849551}
   - {fileID: 2001926726}
   - {fileID: 1964729355}
+  - {fileID: 2011649092}
   - {fileID: 1795745802}
   - {fileID: 1237476942}
   - {fileID: 805089254}
   - {fileID: 2019669510}
-  - {fileID: 1451273504}
   - {fileID: 287582822}
   - {fileID: 1215733187}
-  - {fileID: 139905669}
   - {fileID: 2011442803}
-  - {fileID: 746370605}
   - {fileID: 289346151}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817974432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817974430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9366d05c23e2d854db7fe01d8570aee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentTileSelected: {fileID: 0}
+  TileLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  PlayerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  CenterPoint:
+  - {fileID: 367065849}
+  - {fileID: 1451273503}
+  - {fileID: 139905668}
+  - {fileID: 746370604}
+  - {fileID: 2011649091}
+  - {fileID: 1795745801}
+  - {fileID: 1237476941}
+  - {fileID: 805089253}
+  - {fileID: 1910093432}
+  - {fileID: 2057849550}
+  - {fileID: 2001926725}
+  - {fileID: 1964729354}
+  CenterPointAvailables:
+  - PointEditor: {fileID: 367065850}
+    Available: 0
+  - PointEditor: {fileID: 1451273504}
+    Available: 0
+  - PointEditor: {fileID: 139905669}
+    Available: 0
+  - PointEditor: {fileID: 746370605}
+    Available: 0
+  - PointEditor: {fileID: 2011649092}
+    Available: 0
+  - PointEditor: {fileID: 1795745802}
+    Available: 0
+  - PointEditor: {fileID: 1237476942}
+    Available: 0
+  - PointEditor: {fileID: 805089254}
+    Available: 0
+  - PointEditor: {fileID: 1910093433}
+    Available: 0
+  - PointEditor: {fileID: 2057849551}
+    Available: 0
+  - PointEditor: {fileID: 2001926726}
+    Available: 0
+  - PointEditor: {fileID: 1964729355}
+    Available: 0
+  AddScaleSelection: 0
+  mats: []
 --- !u!1 &824412689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,6 +8515,8 @@ MonoBehaviour:
     Available: 1
   - PointEditor: {fileID: 200485813}
     Available: 1
+  AddScaleSelection: 0
+  mats: []
 --- !u!4 &1483483057
 Transform:
   m_ObjectHideFlags: 0
