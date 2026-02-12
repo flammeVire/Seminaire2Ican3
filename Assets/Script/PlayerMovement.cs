@@ -11,6 +11,22 @@ public class PlayerMovement : MonoBehaviour
     int DataIndex;
     [SerializeField]PlayerData[] playerDatas;
 
+
+    public void PlayAnimationByName(string Name)
+    {
+        Animation animation = GetComponent<Animation>();
+        foreach(AnimationState state in animation)
+        {
+            if(state.name == Name)
+            {
+                animation.PlayQueued(Name);
+                return;
+            }
+        }
+    }
+
+
+
     public void StartMovement(int pointsIndexToStop)
     {
         StartCoroutine(MoveAlongPoints(pointsIndexToStop));
@@ -55,8 +71,6 @@ public class PlayerMovement : MonoBehaviour
                 DataIndex++;
             }
         }
-
-        //movementCoroutine = null;
     }
 
     [Serializable]

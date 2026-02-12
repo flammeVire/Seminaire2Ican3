@@ -113,7 +113,24 @@ public class PointAndClick : MonoBehaviour
 
         StartCoroutine(ChangeScale(-AddScaleSelection));
         CurrentTileSelected.GetComponent<Tile>().CheckPosition();
+        ResetCPA();
         CurrentTileSelected = null;
+    }
+
+    void ResetCPA()
+    {
+        Vector3 point = CurrentTileSelected.transform.position;
+        foreach (var CPA in CenterPointAvailables)
+        {
+            if (CPA.CenterPoint == point)
+            {
+                if (CPA.Available)
+                {
+                    CPA.Available = false;
+                }
+                break;
+            }
+        }
     }
 
     void RotateTile(int Angle)
