@@ -11,7 +11,7 @@ public class PointAndClick : MonoBehaviour
 
 
     [SerializeField] GameObject[] CenterPoint;
-    [SerializeField] CenterPointAvailable[] CenterPointAvailables;
+    [SerializeField] public CenterPointAvailable[] CenterPointAvailables;
 
     [Header("FeedBack")]
     [SerializeField] float AddScaleSelection;
@@ -94,7 +94,7 @@ public class PointAndClick : MonoBehaviour
         }
     }
 
-    void TryToReleaseTile()
+    public void TryToReleaseTile()
     {
         Vector3 point = GetClosestTile(Utility.GetMousePos());
 
@@ -113,13 +113,12 @@ public class PointAndClick : MonoBehaviour
 
         StartCoroutine(ChangeScale(-AddScaleSelection));
         CurrentTileSelected.GetComponent<Tile>().CheckPosition();
-        ResetCPA();
+        ResetCPA(CurrentTileSelected.transform.position);
         CurrentTileSelected = null;
     }
 
-    void ResetCPA()
+    public void ResetCPA(Vector3 point)
     {
-        Vector3 point = CurrentTileSelected.transform.position;
         foreach (var CPA in CenterPointAvailables)
         {
             if (CPA.CenterPoint == point)
