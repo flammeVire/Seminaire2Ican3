@@ -3341,8 +3341,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492539208}
-  - component: {fileID: 492539210}
-  - component: {fileID: 492539209}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -3366,49 +3364,6 @@ Transform:
   - {fileID: 335444460}
   m_Father: {fileID: 746370605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &492539209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492539207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &492539210
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492539207}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &509244822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,8 +3641,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 576981383}
-  - component: {fileID: 576981385}
-  - component: {fileID: 576981384}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -3711,49 +3664,6 @@ Transform:
   - {fileID: 845798581}
   m_Father: {fileID: 1823794707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &576981384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576981382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &576981385
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576981382}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &580962304
 GameObject:
   m_ObjectHideFlags: 0
@@ -4786,8 +4696,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 768075575}
-  - component: {fileID: 768075577}
-  - component: {fileID: 768075576}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -4811,49 +4719,6 @@ Transform:
   - {fileID: 1267397992}
   m_Father: {fileID: 1759038907}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &768075576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768075574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &768075577
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768075574}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &773360097
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,8 +5585,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 840692346}
-  - component: {fileID: 840692348}
-  - component: {fileID: 840692347}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -5745,49 +5608,6 @@ Transform:
   - {fileID: 1242343412}
   m_Father: {fileID: 1503460369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &840692347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840692345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &840692348
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840692345}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &842730727
 GameObject:
   m_ObjectHideFlags: 0
@@ -7307,21 +7127,6 @@ MonoBehaviour:
       TilesRotation: {x: 0, y: 0, z: 0, w: 0}
       TilesEventBoolean: 0
       TileScript: {fileID: 1782728756}
-    - Tiles: {fileID: 768075575}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 768075576}
-    - Tiles: {fileID: 1309043003}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 1309043004}
-    - Tiles: {fileID: 2049897740}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 2049897741}
     - Tiles: {fileID: 1206869840}
       TilesPosition: {x: 0, y: 0, z: 0}
       TilesRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -7342,32 +7147,17 @@ MonoBehaviour:
       TilesRotation: {x: 0, y: 0, z: 0, w: 0}
       TilesEventBoolean: 0
       TileScript: {fileID: 580962306}
+    PAC: {fileID: 477507546}
+    CPAOrigine: []
+    OnResetEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - Datas:
     - Tiles: {fileID: 1362426476}
       TilesPosition: {x: 0, y: 0, z: 0}
       TilesRotation: {x: 0, y: 0, z: 0, w: 0}
       TilesEventBoolean: 0
       TileScript: {fileID: 1362426477}
-    - Tiles: {fileID: 1465014831}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 1465014832}
-    - Tiles: {fileID: 1987301901}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 1987301902}
-    - Tiles: {fileID: 492539208}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 492539209}
-    - Tiles: {fileID: 963481181}
-      TilesPosition: {x: 0, y: 0, z: 0}
-      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
-      TilesEventBoolean: 0
-      TileScript: {fileID: 963481182}
     - Tiles: {fileID: 935800207}
       TilesPosition: {x: 0, y: 0, z: 0}
       TilesRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -7403,6 +7193,83 @@ MonoBehaviour:
       TilesRotation: {x: 0, y: 0, z: 0, w: 0}
       TilesEventBoolean: 0
       TileScript: {fileID: 2082331135}
+    PAC: {fileID: 817974432}
+    CPAOrigine: []
+    OnResetEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - Datas:
+    - Tiles: {fileID: 1903976613}
+      TilesPosition: {x: 0, y: 0, z: 0}
+      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
+      TilesEventBoolean: 0
+      TileScript: {fileID: 1903976614}
+    - Tiles: {fileID: 292810285}
+      TilesPosition: {x: 0, y: 0, z: 0}
+      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
+      TilesEventBoolean: 0
+      TileScript: {fileID: 292810286}
+    - Tiles: {fileID: 1055891563}
+      TilesPosition: {x: 0, y: 0, z: 0}
+      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
+      TilesEventBoolean: 0
+      TileScript: {fileID: 1055891564}
+    - Tiles: {fileID: 17319084}
+      TilesPosition: {x: 0, y: 0, z: 0}
+      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
+      TilesEventBoolean: 0
+      TileScript: {fileID: 17319085}
+    - Tiles: {fileID: 296288226}
+      TilesPosition: {x: 0, y: 0, z: 0}
+      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
+      TilesEventBoolean: 0
+      TileScript: {fileID: 296288227}
+    - Tiles: {fileID: 1647070300}
+      TilesPosition: {x: 0, y: 0, z: 0}
+      TilesRotation: {x: 0, y: 0, z: 0, w: 0}
+      TilesEventBoolean: 0
+      TileScript: {fileID: 1647070301}
+    PAC: {fileID: 1720648030}
+    CPAOrigine: []
+    OnResetEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1903976616}
+          m_TargetAssemblyTypeName: TileMesh, Assembly-CSharp
+          m_MethodName: ChangeMat
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: d6dec78b6d9c8bf48ade82996a0f26d7, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 296288229}
+          m_TargetAssemblyTypeName: TileMesh, Assembly-CSharp
+          m_MethodName: ChangeMat
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: d6dec78b6d9c8bf48ade82996a0f26d7, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 292810288}
+          m_TargetAssemblyTypeName: TileMesh, Assembly-CSharp
+          m_MethodName: ChangeMat
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2100000, guid: d6dec78b6d9c8bf48ade82996a0f26d7, type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &963481180
 GameObject:
   m_ObjectHideFlags: 0
@@ -7412,8 +7279,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 963481181}
-  - component: {fileID: 963481183}
-  - component: {fileID: 963481182}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -7437,49 +7302,6 @@ Transform:
   - {fileID: 234251601}
   m_Father: {fileID: 2011649092}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963481182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963481180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &963481183
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963481180}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &965061522
 GameObject:
   m_ObjectHideFlags: 0
@@ -9475,8 +9297,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1309043003}
-  - component: {fileID: 1309043005}
-  - component: {fileID: 1309043004}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -9500,49 +9320,6 @@ Transform:
   - {fileID: 1666353196}
   m_Father: {fileID: 1895246100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1309043004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309043002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &1309043005
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309043002}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1332287357
 GameObject:
   m_ObjectHideFlags: 0
@@ -10294,8 +10071,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465014831}
-  - component: {fileID: 1465014833}
-  - component: {fileID: 1465014832}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -10319,49 +10094,6 @@ Transform:
   - {fileID: 379771913}
   m_Father: {fileID: 1451273504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1465014832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465014830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &1465014833
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465014830}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1503460368
 GameObject:
   m_ObjectHideFlags: 0
@@ -10569,8 +10301,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1646954780}
-  - component: {fileID: 1646954782}
-  - component: {fileID: 1646954781}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -10594,49 +10324,6 @@ Transform:
   - {fileID: 2106211427}
   m_Father: {fileID: 913884041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1646954781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646954779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &1646954782
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646954779}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1647070299
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,8 +11904,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1850254054}
-  - component: {fileID: 1850254056}
-  - component: {fileID: 1850254055}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -12242,49 +11927,6 @@ Transform:
   - {fileID: 2105849247}
   m_Father: {fileID: 509244823}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1850254055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850254053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &1850254056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850254053}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1882639301
 GameObject:
   m_ObjectHideFlags: 0
@@ -12812,8 +12454,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987301901}
-  - component: {fileID: 1987301903}
-  - component: {fileID: 1987301902}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -12837,49 +12477,6 @@ Transform:
   - {fileID: 590985050}
   m_Father: {fileID: 139905669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1987301902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987301900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &1987301903
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987301900}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2001926725
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,8 +12789,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2041893049}
-  - component: {fileID: 2041893051}
-  - component: {fileID: 2041893050}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -13217,49 +12812,6 @@ Transform:
   - {fileID: 1453905570}
   m_Father: {fileID: 1562555203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2041893050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041893048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &2041893051
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041893048}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2045568197
 GameObject:
   m_ObjectHideFlags: 0
@@ -13300,8 +12852,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049897740}
-  - component: {fileID: 2049897742}
-  - component: {fileID: 2049897741}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -13325,49 +12875,6 @@ Transform:
   - {fileID: 2080299552}
   m_Father: {fileID: 2087882370}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2049897741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049897739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3d753a9d20a9346a721c4a3dc25f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterTilesTarget: {fileID: 0}
-  IsCorrectRotation: 0
-  IsCorrectPosition: 0
-  IsEventCallable: 1
-  OnCorrectTransform:
-    m_PersistentCalls:
-      m_Calls: []
-  conditions: []
-  TileID: -1
-  IncrementRotation: 90
---- !u!65 &2049897742
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049897739}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2053428468
 GameObject:
   m_ObjectHideFlags: 0

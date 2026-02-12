@@ -83,11 +83,11 @@ public class PointAndClick : MonoBehaviour
 
     void ReleaseCPA()
     {
-        foreach (var CPA in CenterPointAvailables)
+        for (int i = 0; i < CenterPointAvailables.Length; i++)
         {
-            if (CPA.CenterPoint == CurrentTileSelected.transform.position)
+            if (CenterPointAvailables[i].CenterPoint == CurrentTileSelected.transform.position)
             {
-                    CPA.Available = true;
+                CenterPointAvailables[i].Available = true;
 
                 break;
             }
@@ -98,14 +98,14 @@ public class PointAndClick : MonoBehaviour
     {
         Vector3 point = GetClosestTile(Utility.GetMousePos());
 
-        foreach(var CPA in CenterPointAvailables)
+        for (int i = 0; i < CenterPointAvailables.Length; i++)
         {
-            if(CPA.CenterPoint == point)
+            if (CenterPointAvailables[i].CenterPoint == point)
             {
-                if (CPA.Available)
+                if (CenterPointAvailables[i].Available)
                 {
                     CurrentTileSelected.transform.position = point;
-                    CPA.Available = false;
+                    CenterPointAvailables[i].Available = false;
                 }
                 break;
             }
@@ -119,13 +119,13 @@ public class PointAndClick : MonoBehaviour
 
     public void ResetCPA(Vector3 point)
     {
-        foreach (var CPA in CenterPointAvailables)
+        for (int i = 0; i < CenterPointAvailables.Length; i++)
         {
-            if (CPA.CenterPoint == point)
+            if (CenterPointAvailables[i].CenterPoint == point)
             {
-                if (CPA.Available)
+                if (CenterPointAvailables[i].Available)
                 {
-                    CPA.Available = false;
+                    CenterPointAvailables[i].Available = false;
                 }
                 break;
             }
@@ -231,7 +231,7 @@ public class Utility : MonoBehaviour
 
 
 [Serializable]
-public class CenterPointAvailable
+public struct CenterPointAvailable
 {
     [SerializeField] Transform PointEditor;
 

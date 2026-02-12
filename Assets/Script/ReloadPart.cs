@@ -20,7 +20,12 @@ public class ManagementPart : MonoBehaviour
                 d.TilesRotation = d.Tiles.rotation;
             }
 
-            t.CPAOrigine = (CenterPointAvailable[])t.PAC.CenterPointAvailables.Clone();
+            t.CPAOrigine = new CenterPointAvailable[t.PAC.CenterPointAvailables.Length];
+
+            for (int i = 0; i < t.PAC.CenterPointAvailables.Length; i++)
+            {
+                t.CPAOrigine[i] = t.PAC.CenterPointAvailables[i];
+            }
         }
     }
 
@@ -32,17 +37,18 @@ public class ManagementPart : MonoBehaviour
             d.TileScript.IsEventCallable = d.TilesEventBoolean;
             d.Tiles.position = d.TilesPosition;
             d.Tiles.rotation = d.TilesRotation;
+            d.TileScript.GetComponent<BoxCollider>().enabled = true;
             if (parts[partToSpawn].PAC.CurrentTileSelected != null)
             {
                 parts[partToSpawn].PAC.TryToReleaseTile();
             }
-            
-                
-            
         }
-        parts[partToSpawn].PAC.CenterPointAvailables = parts[partToSpawn].CPAOrigine;
 
-        
+        for (int i = 0; i < parts[partToSpawn].PAC.CenterPointAvailables.Length; i++)
+        {
+             parts[partToSpawn].PAC.CenterPointAvailables[i] = parts[partToSpawn].CPAOrigine[i];
+        }
+        parts[partToSpawn].OnResetEvent.Invoke();
     }
 
     private void Update()
@@ -61,6 +67,7 @@ public class Part
     public TileData[] Datas;
     public PointAndClick PAC;
     public CenterPointAvailable[] CPAOrigine;
+    public UnityEvent OnResetEvent;
 }
 [Serializable]
 public class TileData
