@@ -50,15 +50,6 @@ public class ManagementPart : MonoBehaviour
         }
         parts[partToSpawn].OnResetEvent.Invoke();
     }
-
-    private void Update()
-    {
-        if (Input.GetButtonDown("Jump"))
-        {
-            Debug.Log("index : " + (this.GetComponent<LevelManager>().CurrentPart - 1).ToString());
-            ResetPart(this.GetComponent<LevelManager>().CurrentPart - 1);
-        }
-    }
 }
 
 [Serializable]

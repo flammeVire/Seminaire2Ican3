@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] UnityEvent StartEvents;
@@ -51,6 +52,15 @@ public class LevelManager : MonoBehaviour
 
             transform.position = end;
         }
+    }
+
+    public void LoadSceneByIndex(int scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+    public void LeaveGame()
+    {
+        Application.Quit();
     }
 }
 [Serializable]
