@@ -97,7 +97,7 @@ public class PointAndClick : MonoBehaviour
     public void TryToReleaseTile()
     {
         Vector3 point = GetClosestTile(Utility.GetMousePos());
-
+        Debug.Log(" Point = " + point);
         for (int i = 0; i < CenterPointAvailables.Length; i++)
         {
             if (CenterPointAvailables[i].CenterPoint == point)
