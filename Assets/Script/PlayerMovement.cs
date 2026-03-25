@@ -25,7 +25,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    public void TeleportPlayer(Transform destination)
+    {
+        transform.position = destination.position;
+       // transform.rotation = destination.rotation;
+    }
 
     public void StartMovement(int pointsIndexToStop)
     {
