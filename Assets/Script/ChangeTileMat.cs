@@ -16,11 +16,6 @@ public class ChangeTileMat : MonoBehaviour
         yield return new WaitUntil(() => tile.IsCorrectPosition);
         yield return new WaitUntil(() => tile.IsCorrectRotation);
         tile.GetComponent<TileMesh>().ChangeMat(newMat);
-        tile.GetComponent<MeshCollider>().enabled = false;
-    }
-
-    private void OnValidate()
-    {
-        tile = GetComponent<Tile>();
+        tile.GetComponent<Collider>().enabled = false;
     }
 }
